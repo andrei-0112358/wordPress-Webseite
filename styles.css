@@ -1,0 +1,146 @@
+
+/* ===== Main Background ===== */
+body {
+    background: linear-gradient(135deg, #9b8de0, #6eb1f7); /* soft pastel gradient */
+    color: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+    min-height: 100vh;
+    font-size: 1em;
+}
+
+/* ===== Blur toggle ===== */
+.blur-toggle {
+    filter: blur(5px);
+    cursor: pointer;
+    transition: filter 0.3s ease;
+    display: inline-block;
+}
+
+.blur-toggle.revealed {
+    filter: none;
+}
+
+.blur-toggle:hover {
+    cursor: pointer;
+}
+
+/* ===== Content Block ===== */
+.block {
+    background-color: rgba(255, 255, 255, 0.1); /* soft semi-transparent background */
+    padding: 20px;
+    max-width: 700px;
+    margin: 1.5rem auto;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    color: #fff;
+    font-size: 1em;
+}
+
+/* ===== Phrases ===== */
+.phrase {
+    margin-top: 20px !important;
+    margin-bottom: 40px !important;
+}
+
+.phrase-title {
+    display: block !important;
+    margin-top: 15px !important;
+    margin-bottom: 10px !important;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+/* ===== Color Accents ===== */
+.eng1 { color: #e74c3c; font-weight: bold; }
+.eng2 { color: #3498db; font-weight: bold; }
+.eng3 { color: #f1c40f; font-weight: bold; }
+.eng4 { color: #f39c12; font-weight: bold; }
+.eng5 { color: #9b59b6; font-weight: bold; }
+.eng6 { color: #ff6f61; font-weight: bold; }
+.eng7 { color: #d35400; font-weight: bold; }
+.eng8 { color: #34495e; font-weight: bold; }
+.eng9 { color: #c0392b; font-weight: bold; }
+.eng10 { color: #27ae60; font-weight: bold; }
+
+/* ===== Lists ===== */
+.phrase ul {
+    margin: 0;
+    padding-left: 20px;
+}
+
+.phrase li {
+    margin-bottom: 5px;
+}
+
+/* ===== Links ===== */
+.phrase a,
+.phrase a:visited {
+    color: #ffffff !important;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.phrase a:hover {
+    color: #a3d4ff;
+    text-decoration: underline;
+    cursor: url('https://slovo.live/wp-content/uploads/2025/06/pawlink.png') 5 2, auto;
+}
+
+/* ===== Buttons ===== */
+.button,
+input[type="submit"] {
+    background: linear-gradient(135deg, #4da6ff, #7cc4ff);
+    color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.button:hover,
+input[type="submit"]:hover {
+    background: linear-gradient(135deg, #7cc4ff, #4da6ff);
+    transform: translateY(-2px);
+}
+
+/* ===== Mobile Responsive ===== */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+        font-size: 1.1em; /* slightly larger for readability on phone */
+    }
+
+    .block {
+        padding: 15px;
+        margin: 1rem auto;
+        max-width: 95%; /* stretch block almost full screen */
+        font-size: 1.1em;
+    }
+
+    .phrase {
+        margin-top: 15px !important;
+        margin-bottom: 25px !important;
+    }
+
+    .phrase-title {
+        font-size: 1.3em;
+        margin-top: 10px !important;
+        margin-bottom: 8px !important;
+    }
+
+    /* Buttons */
+    .button,
+    input[type="submit"] {
+        padding: 12px 18px;
+        font-size: 1em;
+    }
+
+    /* Links */
+    .phrase a:hover {
+        cursor: pointer; /* custom cursor not needed on mobile devices */
+    }
+}
