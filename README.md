@@ -48,6 +48,4 @@ Alle anderen → bleiben auf Frontpage `/welcome/`.
 4. Benutzer können sich über das Login-Formular anmelden.
 
 ## Voraussetzungen
-WordPress 6.x oder höher
-PHP 7.4 oder höher
-Standard-Webserver (Apache/Nginx) mit MySQL
+WordPress 6.x oder höher, PHP 7.4 oder höher, Standard-Webserver (Apache/Nginx) mit MySQL
