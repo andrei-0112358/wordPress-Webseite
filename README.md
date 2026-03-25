@@ -33,15 +33,12 @@ Entfernt unnötige JSON-Prefetch-Daten aus dem Content.
 
 ## Ablauf / Benutzerführung
 1. Benutzer öffnet die Startseite von Slovo.live.
-
 2. Wenn der Benutzer nicht angemeldet ist:
 Die Willkommensseite mit Login-Formular wird angezeigt.
-
 3. Wenn der Benutzer angemeldet ist:
 Benutzername in `slovo_get_user_redirects()`? → Weiterleitung zur persönlichen Homepage.
 Administrator? → Weiterleitung zu `wp-admin`.
 Alle anderen → bleiben auf Frontpage `/welcome/`.
-
 4. Auf der Willkommensseite kann der Benutzer seine Zugangsdaten eingeben, um auf seine Lektionen zuzugreifen.
 
 ## Ausführen
